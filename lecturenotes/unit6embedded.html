@@ -5,14 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Day 1</title>
+    <style>
+        /*p is our selector, color is our property, and fuchsia is our value*/
+        p, h1{
+            color:lightcoral;
+            /*
+            this is fontsize by %, 3 times default size
+            font-size:300%;
+            */
+            font-size: 1.5em; /*this one is 50% bigger than default*/
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight:bolder;
+        }
+        p a{color:firebrick;}
+        #firstlink {color:brown}
+        .redtext {color: red;}
+    </style>
 </head>
 <body>
    <h1>CSS How do you do it?</h1>
-   <a href="http.www.Amazon.com">Amazon</a> 
+   <h2 class="redtext">Selectors</h2>
+   <a href="http.www.Amazon.com" id="firstlink">Amazon</a> 
    <p>
     <a href="http.www.google.com">
      Google   
     </a>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquid a minus, quae reprehenderit quasi quidem suscipit assumenda vel? Obcaecati rem reprehenderit tempore, et iure blanditiis pariatur magni est non?</p>
+    <p class="redtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eos labore doloremque accusantium ad. Perspiciatis quam sit provident quia cumque eaque, natus voluptates molestias ratione eum hic, quisquam reprehenderit placeat.</p>
 </body>
 </html>
