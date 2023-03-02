@@ -13,6 +13,6 @@ h1 {color: #000000;} /*HEX COLOR, BEST TO USE WITH HTML*/
         ul,h1,a,p{background-color:#ff7b00;font-family: 'Roboto', sans-serif;color:#000000;}
         nav a{color:#000000;background-color:#ff7b00}
         nav a:hover{background-color:#ffffff;}
-        nav{margin: 50px 50px 50px 50px;}
+        nav{margin: 10px 10px 10px 10px;}
         .headshot{size:50%;}
         .evenrow{margin:100px 0px 0px 0px; padding-left: 90px;background-color:#ff7b00;} /*Numbers are top, right, bottom, left*/
