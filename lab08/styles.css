@@ -1,0 +1,20 @@
+body{font-family: 'Times New Roman', Times, serif;}
+
+.evenrow{background-color: dodgerblue;}
+h1{font-size: 2 em;}
+h2{font-size: 1.5 em;}
+
+/*New additions*/
+
+h1 {color: #000000;} /*HEX COLOR, BEST TO USE WITH HTML*/
+        a{color:#000000;}
+        a:hover{color:#6303ff54;} /*PSEUDO CLASS-WHEN YOU MOUSEOVER THE LINK*/
+        body{background-color:#808080; }
+        ul,h1,a,p{background-color:#ff7b00;font-family: 'Roboto', sans-serif;color:#000000;}
+        nav a{color:#000000;background-color:#ff7b00}
+        nav a:hover{background-color:#ffffff;}
+        nav{margin: 10px 10px 10px 10px;}
+        .headshot{size:50%;}
+        .evenrow{margin:100px 0px 0px 0px; padding-left: 90px;background-color:#ff7b00;} /*Numbers are top, right, bottom, left*/
+            
+        
