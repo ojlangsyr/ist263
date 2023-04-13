@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        /*functions only run when they are called*/
+        function  welcome (){
+            alert("hello world");
+        }
+        function second(){
+            alert("second message");
+        }
+        function third (){
+            alert('third message');
+        }
+    </script>
+</head>
+<!--onload only works in the body tag-->
+<body onload="third();">
+    <h1 onmouseover="welcome();">JavaScript</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis harum dignissimos numquam quo error quibusdam neque quas accusantium excepturi, deleniti dicta iusto earum quos vitae cum, in ab porro autem.</p>
+    <a href= '' onclick="welcome();">Welcome Me!</a>
+    <a href="" onclick="second();">SECOND LINK</a>
+</body>
+</html>
