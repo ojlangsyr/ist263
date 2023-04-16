@@ -11,6 +11,9 @@
          .div1{
             background-color:white;
             color:#434084;
+            margin-right:100px;
+            margin-left:100px;
+            padding: 50px;
         }
         body{
             background-image:url(../../images/blockbg);
@@ -20,6 +23,13 @@
         nav{
             background-color:white;
             color:#434084;
+            display:flex;
+            justify-content: space-between;
+            margin-right:100px;
+            margin-left:100px;
+            padding-left:100px;
+            padding-right:100px;
+         
          
         }
         a:hover{
@@ -29,6 +39,9 @@
         h1{
             background-color:white;
             color:#434084;
+            text-align:center;
+            margin-left: 100px;
+            margin-right:100px;
         }   
         div img{
             width: 100px;
@@ -37,6 +50,25 @@
             display:flex;
             justify-content: space-between;
 
+        }
+        .gas{
+            width:50%;
+            padding-left:25%;
+        }
+        .imgs{
+            display:flex;
+            justify-content:space-around;
+        }
+        .imgs img{
+            width: 650px;
+            height:300px;
+        }
+        .foot{
+            background-color:white;
+            display:flex;
+            justify-content: space-between;
+            margin-left:100px;
+            margin-right:100px;
         }
     </style>
     
@@ -64,11 +96,11 @@
 
     <div class="imgcontainer">
         
-        <div><img src='../../images/metalogo.jpg'></div>
+        <div><img src='../../images/metalogo.jpg' alt="meta"></div>
 
-        <div><img src='../../images/metalogo.jpg'></div>
+        <div><img src='../../images/gwei.jpg' alt="gwei"></div>
 
-        <div><img src='../../images/metalogo.jpg'></div>
+        <div><img src='../../images/gas.png' alt="gas"></div>
 
     </div>
     
@@ -95,7 +127,14 @@
                     Now that you own a crypto-wallet, you are able to own, and transfer a number of currencies to whoever you want, given you have the address. For the Ethereum chain, as Ether is often required to send and make transactions. These fees are referred to as gas fees and are measured in GWEI. One GWEI is the equivalent of a billionth of an Ether.
                 </li>
             </ul>
-            <img src="">
+            <div class="imgs">
+                <div>
+                    <img src="../../images/ethgas.png" alt="gasoline">
+                </div>
+                <div>
+                    <img src="../../images/dex.jpg" alt="dex">
+                </div>
+            </div>
             <ul>
                 <li>
                     To make MetaMask even more accessible, you’re going to want to add the extension to the hot bar in the top right (if not there already). To do so hit the puzzle icon, and then pin MetaMask to the bar. When accessing from this hot bar, MetaMask creates a more compartmentalized experience where you can access all basic information.
@@ -121,6 +160,14 @@
             </ul>
         </div>
     </div>
-        
+       
+    <footer>
+        <div class='foot'>
+            <div>Copyright (NEVER) </div>
+            <div>Privacy smth</div>
+            <div>Contact me at ojlang@syr.edu</div>
+
+        </div>
+    </footer>
 </body>
 </html>
