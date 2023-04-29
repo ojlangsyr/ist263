@@ -113,7 +113,7 @@
             width:100%;
                       
         }
-        section{
+        .section{
             background-color: white;
             margin-left: 100px;
             margin-right:100px;
@@ -121,10 +121,10 @@
         }
         @media screen and (max-width:1200px){
                 .col{flex-basis:100%;}
-                
+                .iframecontainer, .iftitle {display:none;}
         }
         @media screen and (max-width:900px){
-                .col img, .iframecontainer{display:none;}
+                .col img{display:none;}
         }
         .email{
             display:flex;
@@ -168,8 +168,8 @@
             
             <!--TEXTS-->
             
-            <SECTION>
             
+            <div class="section">
             
             <div class="row">
 
@@ -190,22 +190,22 @@
             <!--IMAGES-->
             <div class="row">
                 <div class="col">
-                    <img src="../../images/btcchart">
+                    <img src="../../images/btcchart" alt="btcchart">
                 </div>
                 <div class="col">
-                    <img src="../../images/finalcomimg2.jpeg">
+                    <img src="../../images/finalcomimg2.jpeg" alt="coins">
                 </div>
             </div>
 
-           
-           </SECTION>
-           
-            <H2>BTC & ETH</H1>
-           <div class="iframecontainer">
-            
-            <iframe src="https://www.tradingview.com/widgetembed/?symbol=BITSTAMP:BTCUSD&amp;interval=D&amp;theme=dark&amp;range=96M&amp;allow_symbol_change=1&amp;utm_source=my_website" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-            <iframe src="https://www.tradingview.com/widgetembed/?symbol=BITSTAMP:ETHUSD&amp;interval=D&amp;theme=dark&amp;range=96M&amp;allow_symbol_change=1&amp;utm_source=my_website" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
            </div>
+           
+           
+        <H2 class="iftitle">BTC & ETH</H1>
+        <div class="iframecontainer">
+        
+        <iframe src="https://www.tradingview.com/widgetembed/?symbol=BITSTAMP:BTCUSD&amp;interval=D&amp;theme=dark&amp;range=96M&amp;allow_symbol_change=1&amp;utm_source=my_website"></iframe>
+        <iframe src="https://www.tradingview.com/widgetembed/?symbol=BITSTAMP:ETHUSD&amp;interval=D&amp;theme=dark&amp;range=96M&amp;allow_symbol_change=1&amp;utm_source=my_website"></iframe>
+        </div>
 
            
            
@@ -221,7 +221,7 @@
                 <label for='email'></label>
                 <textarea id="email" name="email" rows = "3" cols="50">Email me for any further questions.</textarea> 
                 <input type="submit" value = "EMAIL"> 
-
+                </form>   
            </div>
             
            
