@@ -11,33 +11,96 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
     
-    <!--
-            .div1{
-                background-color:#504646;
-                color:white;
-            }
-            body{
-                background-image:url(../../images/Picture3.jpg);
-                background-repeat:no-repeat;
-                background-size:cover;
-            }
-            nav{
-                background-color:#504646;
-                color:white;    
-            }
-            a:hover{
-                color:white;
-            }
-            h1{
-                background-color:#504646;
-                color:white;
-            }
-    -->
+   
+            
+    
     <style>
-        h1{
+        h1, h2{
             font-family: 'Inter', sans-serif;
         }
+        body{
+            background-image:url(../../images/homebg.jpg);
+            background-size:cover;
+            background-repeat:no-repeat;
+            
+        }
+        nav{
+            background-color:white;
+            color:#434084;
+            display:flex;
+            justify-content: space-between;
+            margin-right:100px;
+            margin-left:100px;
+            padding-left:100px;
+            padding-right:100px; 
+        }
+        a:hover{
+            color:#434084;
+        }
+       
+        h1{
+            background-color:white;
+            color:#434084;
+            text-align:center;
+            margin-left: 100px;
+            margin-right:100px;
+        } 
+        .foot{
+            background-color:white;
+            display:flex;
+            justify-content: space-between;
+            margin-left:100px;
+            margin-right:100px;
+            padding:20px;
+        }
+        div{
+            background-color:white;
+            display:flex;
+            color:#434084;
+        }
+        .container{
+            display:flex;
+            flex-direction:row;
+            margin-right:100px;
+            margin-left:100px;
+            padding: 50px;
+            flex-wrap:wrap;
 
+        }
+        .col{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            width:50%
+        }
+        h2{
+            background-color:white;
+            color:#434084;
+            text-align:center;
+            margin-left: 100px;
+            margin-right:100px;
+        }
+        .banner{
+            margin-left: 100px;
+            margin-right:100px;
+        }
+        .bannerimg{
+            width:100%;          
+        }
+        .imgs{
+            padding:10px;
+
+        }
+        @media screen and (max-width:900px){
+            .imgs {display:none;}
+            .col{flex-basis:100%;}
+        }
+        footer{
+            margin-top:40px;
+        }
+        p{
+            font-size:x-large;
+        }
     </style>
 </head>
 <body>
@@ -48,9 +111,58 @@
         <span>|</span>
         <a href="shortdesc.html">FINAL COMMENTS</a>
     </nav>
+    <div class="banner">
+        
+        <img class='bannerimg' src="../../images/homebanner7.jpg" alt="bannerimg">
+    
+    </div>
+    
+    
     <h1>
         Creating a Free Digital-Wallet
     </h1>
+
+    <h2>
+        Why learning how to create a digital wallet could be in your future.
+    </h2>
+
+
+
+
+
+
+    <div class="container">
+    
+        <div class="col">
+            
+            <p>In the modern day and age, with a fluctuating sense of financial security across a good portion of the world, it is important to understand potential options available to function as a store of value. You hear about cryptocurrency everywhere, mostly in terms of a bad investment. However, there are several countries with a currency so badly inflated or effectively worthless that for them cryptocurrencies are more than a viable option. There are a number of ways to purchase and obtain different tokens, but first things first you need somewhere to purchase your first, meaning you need access to an exchange. There are a number of options that are good, but this changes depending on your state and the respective laws surrounding certain exchanges. Do your own research as to what options are available to you. Once you’ve got access to an exchange, you can choose to use the exchange itself to store your currency, a hardware wallet, or a digital wallet.</p>
+            
+            <img class='imgs' src="../../images/homeimg1.jpeg">
+
+        </div>
+
+
+        <div class="col">
+            
+            <img class='imgs' src="../../images/homeimg2.jpg">
+            
+            <p> I would advise against using the exchanges themselves to store your coins, as proven relatively recently by a certain exchange operating out of the Bahamas. Digital wallets are free to create, as long as you have the device to use it on, they are viable if you adhere to keeping that information secure. Finally, the hardware wallet is the most secure of any option, as not only do you need the password, but you also need the device, meaning if you lose it, it’s gone forever. However, I will go over the basics of how to create a simple digital wallet that anyone can create and effectively store their currency, and all you need is access to chrome. There are a number of options with their own benefits/drawbacks, but I will be going over creating a MetaMask digital wallet. </p>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+<!--
+
+
     <div class="div1">
         <div>  
             In the modern day and age, with a fluctuating sense of financial security across a good portion of the world, it is important to understand potential options available to function as a store of value. You hear about cryptocurrency everywhere, mostly in terms of a bad investment. However, there are several countries with a currency so badly inflated or effectively worthless that for them cryptocurrencies are more than a viable option.
@@ -60,5 +172,16 @@
         </div>
     </div>
     <img src="../../images/Picture5.jpg" alt="pic5">
+    -->
+
+    <footer>
+        <div class='foot'>
+            <div>Copyright (2023) </div>
+            <div>Final Project for IST263 Spring 2023</div>
+            <div>Contact me at ojlang@syr.edu</div>
+
+        </div>
+    </footer>
+
 </body>
 </html>

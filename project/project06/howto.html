@@ -13,7 +13,7 @@
         h1{
             font-family: 'Inter', sans-serif;
         }
-         .div1{
+        .div1{
             background-color:white;
             color:#434084;
             margin-right:100px;
@@ -23,6 +23,7 @@
         body{
             background-image:url(../../images/blockbg);
             background-size:cover;
+            color:#434084;
             
         }
         nav{
@@ -47,9 +48,10 @@
             text-align:center;
             margin-left: 100px;
             margin-right:100px;
+
         }   
         div img{
-            width: 100px;
+            width: 200px;
         }
         .imgcontainer{
             display:flex;
@@ -62,11 +64,13 @@
         }
         .imgs{
             display:flex;
-            justify-content:space-around;
+            justify-content:space-evenly;
+            margin-left: 15%;
+            margin-right:15%;
         }
         .imgs img{
-            width:100%;
-            height:300px;
+            width:700px;
+            height:425px;
         }
         .foot{
             background-color:white;
@@ -75,9 +79,16 @@
             margin-left:100px;
             margin-right:100px;
         }
-        @media only screen and (max-width:1000px){
+        @media screen and (max-width:940px){
                 .imgs img{display:none;}
-            }
+        }
+        @media screen and (max-width:1650px){
+                .imgs{flex-wrap:wrap;}
+        }
+        .preface,div li{
+            font-size:x-large;
+        }
+
     </style>
     
     
@@ -115,13 +126,13 @@
     
         
         
-        <div tabindex="5">
+        <div class="preface" tabindex="5">
             This digital wallet functions as a chrome extension so that you can connect your digital wallet to a number of different sites with different functions. This site will list a step by step on how to create your own.
         </div>
         <div>
             <ul>
                 <li tabindex="6">
-                    Go to metamask.io on chrome and hit download.
+                    Go to <a href='https://metamask.io/'>metamask.io</a> on chrome and hit download.
                 </li>
                 <li tabindex="7">
                     Once the extension has been added, you will be prompted to create a password, and then given a recovery phrase. Don’t share this with anyone else, and have it written somewhere you will remember, in the case you forget your password, this is the only way to recover it.
@@ -137,12 +148,11 @@
                 </li>
             </ul>
             <div class="imgs">
-                <div tabindex="11">
-                    <img src="../../images/ethgas.png" alt="eth as real gas">
-                </div>
-                <div tabindex="12">
-                    <img src="../../images/dex.jpg" alt="dex">
-                </div>
+                    <img tabindex="11" src="../../images/ethgas.png" alt="eth as real gas">
+
+
+                    <img tabindex="12" src="../../images/dex.jpg" alt="dex">
+                
             </div>
             <ul>
                 <li tabindex="13">
@@ -172,8 +182,8 @@
        
     <footer>
         <div class='foot'>
-            <div tabindex="20">Copyright (NEVER) </div>
-            <div tabindex="21">Privacy smth</div>
+            <div tabindex="20">Copyright (2023) </div>
+            <div tabindex="21">Final Project for IST263 Spring 2023</div>
             <div tabindex="22">Contact me at ojlang@syr.edu</div>
 
         </div>

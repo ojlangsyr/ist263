@@ -14,34 +14,151 @@
 
     
       <style>
-        h1{
+         h1, h2{
             font-family: 'Inter', sans-serif;
         }
-        .div1{
-            background-color:#504646;
-            color:white;
-        }
         body{
-            background-image:url(../../images/th-2497508886.jpg);
-            background-repeat:repeat;
+            background-image:url(../../images/homebanner4.jpg);
+            background-size:cover;
+            background-repeat:no-repeat;
             
         }
         nav{
-            background-color:#504646;
-            color:white;    
+            background-color:white;
+            color:#434084;
+            display:flex;
+            justify-content: space-between;
+            margin-right:100px;
+            margin-left:100px;
+            padding-left:100px;
+            padding-right:100px; 
         }
         a:hover{
-            color:white;
+            color:#434084;
         }
+       
         h1{
-            background-color:#504646;
-            color:white;
+            background-color:white;
+            color:#434084;
+            text-align:center;
+            margin-left: 100px;
+            margin-right:100px;
+            
+        } 
+        .foot{
+            background-color:white;
+            display:flex;
+            justify-content: space-between;
+            margin-left:100px;
+            margin-right:100px;
+            padding:20px;
+        }
+        div{
+            background-color:white;
+            display:flex;
+            color:#434084;
+        }
+        .container{
+            display:flex;
+            flex-direction:row;
+            margin-right:100px;
+            margin-left:100px;
+            padding: 50px;
+            flex-wrap:wrap;
+
+        }
+        .col{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            width:50%
+        }
+        h2{
+            background-color:white;
+            color:#434084;
+            text-align:center;
+            margin-left: 100px;
+            margin-right:100px;
+        }
+        .imgs{
+            padding:10px;
+
+        }
+        .row{
+            display:flex;
+            margin-left:100px;
+            margin-right:100px;
+            margin-top:10px;
+            font-size:x-large;
+            padding-top:20px;
+            padding-left:20px;
+            padding-right:20px;
+            flex-wrap:wrap;
+        }
+        p{
+            background-color:white;
+            color:#434084;
+            text-align:center;
+            margin-left: 100px;
+            margin-right:100px;
+            padding-left:100px;
+            padding-right:100px; 
+            font-size:x-large;
+        }
+        .banner{
+            margin-left: 100px;
+            margin-right:100px;
+        }
+        .bannerimg{
+            width:100%;
+                      
+        }
+        section{
+            background-color: white;
+            margin-left: 100px;
+            margin-right:100px;
+            padding-bottom: 100px;
+        }
+        @media screen and (max-width:1200px){
+                .col{flex-basis:100%;}
+                
+        }
+        @media screen and (max-width:900px){
+                .col img{display:none;}
         }
         
-
     </style>  
-    
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      const apiKey = '3368c970-c93e-4a11-8b37-6413a75278a6';
+      const endpoint = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest';
+      const limit = 10;
+
+      $.ajax({
+        url: `${endpoint}?limit=${limit}`,
+        headers: {
+          'X-CMC_PRO_API_KEY': apiKey
+        },
+        success: function(data) {
+          const cryptocurrencies = data.data;
+          const container = document.getElementById('cryptocurrency-list');
+
+          for (let i = 0; i < cryptocurrencies.length; i++) {
+            const crypto = cryptocurrencies[i];
+            const name = crypto.name;
+            const symbol = crypto.symbol;
+            const price = crypto.quote.USD.price;
+
+            const item = document.createElement('li');
+            item.innerHTML = `<strong>${name} (${symbol})</strong>: $${price.toFixed(2)}`;
+            container.appendChild(item);
+          }
+        },
+        error: function(error) {
+          console.error(error);
+        }
+      });
+    </script>
 </head>
 <body>
                     <nav>
@@ -55,6 +172,66 @@
             <h1>
                 Final comments
             </h1>
+
+            <p>You now possess the ability to interact with the blockchain. You are somehow still early to this. This is a rare chance in the modern world, an industry that has not yet been entirely plundered yet.</p>
+            <div class="banner">
+                <img class="bannerimg" src="../../images/finalcombanner2.jpg" alt="banner">
+            </div>
+
+            
+            
+            
+            
+            <!--TEXTS-->
+            
+            <SECTION>
+            
+            
+            <div class="row">
+
+                <div class="col">
+                    All of this information gives you the ability to own, obtain, and store your crypto. Whether you see it as an investment or intend to use it for transactions, this information will be more and more available to the general public and will be seen as common knowledge as time goes on. The underlying technology will become much more prevalent in the future, meaning it is good to be in the know ahead of time. As time goes on the use of cryptocurrencies will be more widespread, and their usefulness and effectiveness will lead it to be more and more ingrained in our daily lives. Nowadays most people don’t even have any bills in their wallets at all, it’s already digital. When it finally gets adapted to regular transactions and optimized for consistency and speed, it will have taken longer for you to count out the bills, as opposed to typing in the amount. When it is woven into monetary systems, you won’t even think about it happening.
+                </div>
+
+
+                <div class="col">
+                     Even now the value of such a system would be tremendous to countries with certain failing currencies, for example, the Turkish Lira, and Venezuelan Bolivar, among several other national currencies. Considering your currency is most likely not in a death spiral, having all the knowledge of another method to store value, works to serve as an alternative to being trapped in a failing currency or corrupt government. If it is more to your taste, you can simply consider it a more risky investment than the usual options. To whatever end you find value in this, it all comes with another level of perceived personal freedom. With this freedom comes the lack of the usual safety net to return in the event of faulty transactions or scams, however, that means it is up to you to discern between good and bad. You and only you are your wallet’s security, protect your keys to the best of your ability.
+                </div>
+
+            </div>
+
+
+
+
+            <!--IMAGES-->
+            <div class="row">
+                <div class="col">
+                    <img src="../../images/btcchart">
+                </div>
+                <div class="col">
+                    <img src="../../images/finalcomimg2.jpeg">
+                </div>
+            </div>
+
+           
+           </SECTION>
+           <ul id="cryptocurrency-list"></ul>
+           
+           
+           
+           
+           
+            <p>The future of the blockchain does not rely on the price of any token. Only the underlying technology is what matters.</p>
+
+
+
+
+
+
+
+
+<!-- 
+
             <div class="div1">
                 <div>
                     All of this information gives you the ability to own, obtain, and store your crypto. Whether you see it as an investment or intend to use it for transactions, this information will be more and more available to the general public and will be seen as common knowledge as time goes on. The underlying technology will become much more prevalent in the future, meaning it is good to be in the know ahead of time.
@@ -65,6 +242,15 @@
                 </div>
             </div>
             <img src="../../images/Picture4.jpg" alt="pic4">
-       
+-->
+
+    <footer>
+        <div class='foot'>
+            <div>Copyright (2023) </div>
+            <div>Final Project for IST263 Spring 2023</div>
+            <div >Contact me at ojlang@syr.edu</div>
+
+        </div>
+    </footer>
 </body>
 </html>
