@@ -126,39 +126,15 @@
         @media screen and (max-width:900px){
                 .col img{display:none;}
         }
-        
-    </style>  
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      const apiKey = '3368c970-c93e-4a11-8b37-6413a75278a6';
-      const endpoint = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest';
-      const limit = 10;
-
-      $.ajax({
-        url: `${endpoint}?limit=${limit}`,
-        headers: {
-          'X-CMC_PRO_API_KEY': apiKey
-        },
-        success: function(data) {
-          const cryptocurrencies = data.data;
-          const container = document.getElementById('cryptocurrency-list');
-
-          for (let i = 0; i < cryptocurrencies.length; i++) {
-            const crypto = cryptocurrencies[i];
-            const name = crypto.name;
-            const symbol = crypto.symbol;
-            const price = crypto.quote.USD.price;
-
-            const item = document.createElement('li');
-            item.innerHTML = `<strong>${name} (${symbol})</strong>: $${price.toFixed(2)}`;
-            container.appendChild(item);
-          }
-        },
-        error: function(error) {
-          console.error(error);
+        .email{
+            display:flex;
+            justify-content:center;
+            background-color: white;
+            margin-left: 100px;
+            margin-right:100px;
+            margin-bottom: 20px;
         }
-      });
-    </script>
+    </style>  
 </head>
 <body>
                     <nav>
@@ -178,7 +154,6 @@
                 <img class="bannerimg" src="../../images/finalcombanner2.jpg" alt="banner">
             </div>
 
-            
             
             
             
@@ -215,7 +190,10 @@
 
            
            </SECTION>
-           <ul id="cryptocurrency-list"></ul>
+           
+           <iframe src="https://coinmarketcap.com/currencies/bitcoin/"></iframe>
+           
+           
            
            
            
@@ -223,26 +201,18 @@
            
             <p>The future of the blockchain does not rely on the price of any token. Only the underlying technology is what matters.</p>
 
+           <div class="email">
+
+                <form action="https://formspree.io/f/xlekjbaw" method="post"> 
+                <label for='email'></label>
+                <textarea id="email" name="email" rows = "3" cols="50">Email me for any further questions.</textarea> 
+                <input type="submit" value = "EMAIL"> 
+
+           </div>
+            
+           
 
 
-
-
-
-
-
-<!-- 
-
-            <div class="div1">
-                <div>
-                    All of this information gives you the ability to own, obtain, and store your crypto. Whether you see it as an investment or intend to use it for transactions, this information will be more and more available to the general public and will be seen as common knowledge as time goes on. The underlying technology will become much more prevalent in the future, meaning it is good to be in the know ahead of time.
-                </div>
-                
-                <div>
-                    As time goes on the use of cryptocurrencies will be more widespread, and their usefulness and effectiveness will lead it to be more and more ingrained in our daily lives. Nowadays most people don’t even have any bills in their wallets at all, it’s already digital. When it finally gets adapted to regular transactions and optimized for consistency and speed, it will have taken longer for you to count out the bills, as opposed to typing in the amount. When it is woven into monetary systems, you won’t even think about it happening. Even now the value of such a system would be tremendous to countries with certain failing currencies, for example, the Turkish Lira, and Venezuelan Bolivar, among several other national currencies. Considering your currency is most likely not in a death spiral, having all the knowledge of another method to store value, works to serve as an alternative to being trapped in a failing currency or corrupt government. If it is more to your taste, you can simply consider it a more risky investment than the usual options. To whatever end you find value in this, it all comes with another level of perceived personal freedom. With this freedom comes the lack of the usual safety net to return in the event of faulty transactions or scams, however, that means it is up to you to discern between good and bad. You and only you are your wallet’s security, protect your keys to the best of your ability.
-                </div>
-            </div>
-            <img src="../../images/Picture4.jpg" alt="pic4">
--->
 
     <footer>
         <div class='foot'>
