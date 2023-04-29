@@ -124,7 +124,7 @@
                 
         }
         @media screen and (max-width:900px){
-                .col img{display:none;}
+                .col img, .iframecontainer{display:none;}
         }
         .email{
             display:flex;
@@ -134,7 +134,13 @@
             margin-right:100px;
             margin-bottom: 20px;
         }
-        iframe{
+        .iframecontainer{
+            margin-top:20px;
+            margin-left: 100px;
+            margin-right:100px;
+            height: 600px;    
+        }
+        .iframecontainer iframe{
             width:100%;
         }
     </style>  
@@ -194,7 +200,11 @@
            
            </SECTION>
            
-           <iframe src="https://www.tradingview.com/widgetembed/?symbol=BITSTAMP:BTCUSD&amp;interval=5&amp;theme=light&amp;range=custom&amp;from=1461955200000&amp;to=now&amp;allow_symbol_change=1&amp;utm_source=https://ojlangsyr.github.io/ist263/project/project06/finalcomments.html" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+
+           <div class="iframecontainer">
+            <iframe src="https://www.tradingview.com/widgetembed/?symbol=BITSTAMP:BTCUSD&amp;interval=D&amp;theme=dark&amp;range=72M&amp;allow_symbol_change=1&amp;utm_source=my_website" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+           </div>
+
            
            
            
